@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dubai-Medium.ttf">
+            <string>Dubai-Medium</string>
+        </array>
+        <array key="Dubai-Regular.ttf">
+            <string>Dubai-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Where_Lick_Togo_Vc" customModule="STARair" customModuleProvider="target">
+            <connections>
+                <outlet property="HeaderView" destination="Ge9-TK-bB3" id="Pd7-zs-R5q"/>
+                <outlet property="ImgAirport" destination="SmP-gL-usy" id="0pn-Fl-WJ0"/>
+                <outlet property="ImgFlagHeader" destination="rlU-4O-Zum" id="f8l-V3-hg4"/>
+                <outlet property="Imgweather" destination="JSq-rC-vmv" id="abO-lO-MA6"/>
+                <outlet property="VWCheckIn" destination="ejK-ZH-nRm" id="TTX-n9-Iaz"/>
+                <outlet property="btnDeparture" destination="GCv-Nf-zyq" id="ded-cq-nOL"/>
+                <outlet property="collectionviewAirport_Information" destination="NBa-fx-7oL" id="Ek3-9M-U6w"/>
+                <outlet property="collectionviewEvents" destination="46x-0w-yl0" id="GoB-hJ-KdJ"/>
+                <outlet property="collectionviewFlyersInTheCity" destination="rdA-BJ-8yZ" id="Wel-BT-nLc"/>
+                <outlet property="collectionviewMeetups" destination="xwl-sc-djU" id="FFB-cB-2SU"/>
+                <outlet property="collectionviewPics" destination="RX9-0Y-94n" id="2pY-Mp-Btz"/>
+                <outlet property="collectionviewPlaces" destination="Rc5-r5-sdk" id="dZm-FZ-8WZ"/>
+                <outlet property="collectionviewShops_Dine" destination="P84-ce-W2a" id="f8a-On-Scq"/>
+                <outlet property="imgAirline" destination="n21-IQ-dPd" id="eai-lK-EkL"/>
+                <outlet property="imgFlghtTell" destination="3ZV-rt-fe5" id="MJ2-NS-aQr"/>
+                <outlet property="lblAirline" destination="NWG-k3-2qy" id="4A7-Jt-DMr"/>
+                <outlet property="lblAirportCode" destination="ILQ-rm-RtG" id="ZwG-9F-Gbm"/>
+                <outlet property="lblAirportName" destination="sZp-3G-6N3" id="Snl-Bg-3O5"/>
+                <outlet property="lblCityName" destination="00J-ww-6UI" id="Ovi-HV-fOs"/>
+                <outlet property="lblFlightNo" destination="odM-bj-5CT" id="zMM-hB-l1A"/>
+                <outlet property="lbldateD" destination="k6V-Qp-8Sd" id="vYJ-3X-IAh"/>
+                <outlet property="lblmsg" destination="eCJ-LH-Djt" id="Hcp-xS-8Jl"/>
+                <outlet property="lbltimeD" destination="4Si-15-tWY" id="vet-IB-Qmf"/>
+                <outlet property="lblweather" destination="JbC-9t-5lf" id="bbJ-PP-P5N"/>
+                <outlet property="segmentedControl" destination="Ss4-7u-vyn" id="UDO-ZL-yPU"/>
+                <outlet property="tblPlaces" destination="6lh-oG-z77" id="Kkq-Sc-By3"/>
+                <outlet property="txtFlightNo" destination="9lf-4K-NI7" id="ok8-e9-pC6"/>
+                <outlet property="view" destination="MnM-iK-7vp" id="n38-Tc-3tA"/>
+                <outlet property="vwAirport_Information" destination="yaa-3i-L7e" id="grZ-0Y-fV5"/>
+                <outlet property="vwEvents" destination="83r-gS-lVi" id="tgn-TC-Dyk"/>
+                <outlet property="vwFlyersinTheCity" destination="QaA-dr-Myg" id="H15-Tu-xUD"/>
+                <outlet property="vwInformation" destination="uRQ-JZ-UBI" id="ORC-1y-6J7"/>
+                <outlet property="vwMeetups" destination="z8E-Tr-i6s" id="YYn-Lm-Cv0"/>
+                <outlet property="vwPics" destination="BY6-6l-5BC" id="m9O-Ol-3aA"/>
+                <outlet property="vwPlaces" destination="Rvw-2H-x7z" id="yuO-pk-Nzc"/>
+                <outlet property="vwShopsDine" destination="dpb-gV-Qpb" id="GGk-ed-set"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="MnM-iK-7vp">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6lh-oG-z77">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xJV-Na-hiF"/>
+                        <outlet property="delegate" destination="-1" id="W74-BS-Q1I"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-LH-Djt">
+                    <rect key="frame" x="20" y="273" width="41.5" height="526"/>
+                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                    <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="c6g-4j-Siu" firstAttribute="bottom" secondItem="eCJ-LH-Djt" secondAttribute="bottom" constant="225" id="3Vg-To-VKW"/>
+                <constraint firstItem="6lh-oG-z77" firstAttribute="bottom" secondItem="c6g-4j-Siu" secondAttribute="bottom" id="3bQ-i4-2ev"/>
+                <constraint firstItem="eCJ-LH-Djt" firstAttribute="leading" secondItem="c6g-4j-Siu" secondAttribute="leading" constant="20" id="7L4-9L-NIR"/>
+                <constraint firstItem="eCJ-LH-Djt" firstAttribute="top" secondItem="c6g-4j-Siu" secondAttribute="top" constant="253" id="Eit-zd-jls"/>
+                <constraint firstItem="6lh-oG-z77" firstAttribute="trailing" secondItem="c6g-4j-Siu" secondAttribute="trailing" id="bCa-8X-URJ"/>
+                <constraint firstItem="6lh-oG-z77" firstAttribute="leading" secondItem="c6g-4j-Siu" secondAttribute="leading" id="tKG-HT-W6T"/>
+                <constraint firstItem="6lh-oG-z77" firstAttribute="top" secondItem="MnM-iK-7vp" secondAttribute="top" id="xzO-o2-OKM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="c6g-4j-Siu"/>
+            <point key="canvasLocation" x="-1906" y="-1184"/>
+        </view>
+        <view contentMode="scaleToFill" id="Ge9-TK-bB3">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="488"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O15-vt-fa0">
+                    <rect key="frame" x="0.0" y="20" width="768" height="401"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_plane" translatesAutoresizingMaskIntoConstraints="NO" id="SmP-gL-usy">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="401"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRX-Dx-zaW">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="401"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F0-1c-Epg">
+                            <rect key="frame" x="8" y="40" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="ic_red_back"/>
+                            <connections>
+                                <action selector="BtnBackClick:" destination="-1" eventType="touchUpInside" id="e7E-qL-ARv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DXB" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-rm-RtG">
+                            <rect key="frame" x="354" y="47" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="bf5-Cr-xt0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o6E-0a-tqq">
+                            <rect key="frame" x="512" y="40" width="248" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSq-rC-vmv">
+                                    <rect key="frame" x="214" y="1" width="28" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbC-9t-5lf">
+                                    <rect key="frame" x="19" y="3" width="191" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dubai International Airport" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZp-3G-6N3">
+                            <rect key="frame" x="5" y="349" width="758" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="MD1-Gw-RCq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_uae_flag" translatesAutoresizingMaskIntoConstraints="NO" id="rlU-4O-Zum">
+                            <rect key="frame" x="334" y="160.5" width="100" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="YMQ-5f-lTc"/>
+                                <constraint firstAttribute="height" constant="80" id="ZJY-ml-htd"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dubai" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00J-ww-6UI">
+                            <rect key="frame" x="5" y="321" width="758" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Z02-8a-d2m"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="00J-ww-6UI" secondAttribute="trailing" constant="5" id="2Yy-gB-0B4"/>
+                        <constraint firstItem="sZp-3G-6N3" firstAttribute="leading" secondItem="O15-vt-fa0" secondAttribute="leading" constant="5" id="8nR-ZC-XFs"/>
+                        <constraint firstItem="sZp-3G-6N3" firstAttribute="centerX" secondItem="O15-vt-fa0" secondAttribute="centerX" id="9rf-DP-r0W"/>
+                        <constraint firstItem="rlU-4O-Zum" firstAttribute="centerY" secondItem="O15-vt-fa0" secondAttribute="centerY" id="Bzc-wL-NE3"/>
+                        <constraint firstItem="rlU-4O-Zum" firstAttribute="centerX" secondItem="O15-vt-fa0" secondAttribute="centerX" id="D20-sZ-lAT"/>
+                        <constraint firstItem="ILQ-rm-RtG" firstAttribute="top" secondItem="O15-vt-fa0" secondAttribute="top" constant="47" id="OLm-kG-3Oz"/>
+                        <constraint firstItem="sZp-3G-6N3" firstAttribute="top" secondItem="00J-ww-6UI" secondAttribute="bottom" constant="4" id="P8O-xR-ldA"/>
+                        <constraint firstItem="sZp-3G-6N3" firstAttribute="top" secondItem="00J-ww-6UI" secondAttribute="bottom" constant="4" id="Pp0-pw-vUU"/>
+                        <constraint firstAttribute="trailing" secondItem="sZp-3G-6N3" secondAttribute="trailing" constant="5" id="Yuc-fY-8Yj"/>
+                        <constraint firstItem="ILQ-rm-RtG" firstAttribute="centerX" secondItem="O15-vt-fa0" secondAttribute="centerX" id="bP6-E9-24f"/>
+                        <constraint firstItem="00J-ww-6UI" firstAttribute="leading" secondItem="O15-vt-fa0" secondAttribute="leading" constant="5" id="bTU-dn-9G4"/>
+                        <constraint firstAttribute="bottom" secondItem="sZp-3G-6N3" secondAttribute="bottom" constant="7" id="i36-mm-cr2"/>
+                        <constraint firstItem="00J-ww-6UI" firstAttribute="centerX" secondItem="O15-vt-fa0" secondAttribute="centerX" id="t9K-kF-hA0"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ss4-7u-vyn">
+                    <rect key="frame" x="8" y="429" width="752" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="dji-t6-TvN"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Information"/>
+                        <segment title="Flyers "/>
+                        <segment title="Check In"/>
+                    </segments>
+                    <connections>
+                        <action selector="indexChangedWithSender:" destination="-1" eventType="valueChanged" id="tBX-ed-kzi"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="83b-wB-X3I" firstAttribute="bottom" secondItem="Ss4-7u-vyn" secondAttribute="bottom" constant="9" id="2Pr-rr-xEB"/>
+                <constraint firstItem="O15-vt-fa0" firstAttribute="trailing" secondItem="83b-wB-X3I" secondAttribute="trailing" id="5th-JJ-Cqf"/>
+                <constraint firstItem="83b-wB-X3I" firstAttribute="trailing" secondItem="Ss4-7u-vyn" secondAttribute="trailing" constant="8" id="DE8-WE-yiN"/>
+                <constraint firstItem="O15-vt-fa0" firstAttribute="leading" secondItem="83b-wB-X3I" secondAttribute="leading" id="DxF-ir-AjJ"/>
+                <constraint firstItem="Ss4-7u-vyn" firstAttribute="top" secondItem="O15-vt-fa0" secondAttribute="bottom" constant="8" id="Vgw-hd-eA8"/>
+                <constraint firstItem="O15-vt-fa0" firstAttribute="top" secondItem="83b-wB-X3I" secondAttribute="top" id="kKN-Wp-BhQ"/>
+                <constraint firstItem="Ss4-7u-vyn" firstAttribute="centerX" secondItem="Ge9-TK-bB3" secondAttribute="centerX" id="lAf-cJ-QvZ"/>
+                <constraint firstItem="Ss4-7u-vyn" firstAttribute="leading" secondItem="83b-wB-X3I" secondAttribute="leading" constant="8" id="uke-a1-oXM"/>
+                <constraint firstItem="Ss4-7u-vyn" firstAttribute="top" secondItem="O15-vt-fa0" secondAttribute="bottom" constant="8" id="ydI-SX-4R1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="83b-wB-X3I"/>
+            <point key="canvasLocation" x="-1073.4375" y="-1032.421875"/>
+        </view>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ejK-ZH-nRm">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="306"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1W-dU-qjL">
+                    <rect key="frame" x="0.0" y="20" width="768" height="85"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="utP-xT-aH9">
+                            <rect key="frame" x="413" y="0.0" width="336" height="85"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Departure*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-gs-ScV">
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="Lmr-6Q-nLt">
+                                    <rect key="frame" x="10" y="35" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6V-Qp-8Sd">
+                                    <rect key="frame" x="50" y="35" width="243" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Si-15-tWY">
+                                    <rect key="frame" x="93" y="49" width="243" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="18"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5dx-8U-UcO">
+                                    <rect key="frame" x="0.0" y="75" width="312" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.84705882352941175" green="0.074509803921568626" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-Nf-zyq">
+                                    <rect key="frame" x="0.0" y="0.0" width="312" height="75"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="BtnDeparture:" destination="-1" eventType="touchUpInside" id="dBM-Iw-f5W"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHX-B1-1MJ">
+                            <rect key="frame" x="23" y="0.0" width="349" height="85"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Airline*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtD-S6-tXx">
+                                    <rect key="frame" x="0.0" y="0.0" width="349" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="departure" translatesAutoresizingMaskIntoConstraints="NO" id="n21-IQ-dPd">
+                                    <rect key="frame" x="0.0" y="35" width="50" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Airline*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-k3-2qy">
+                                    <rect key="frame" x="60" y="35" width="219" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rl4-ka-cd0">
+                                    <rect key="frame" x="0.0" y="75" width="324" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.84705882352941175" green="0.074509803921568626" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtp-fY-DXP">
+                                    <rect key="frame" x="0.0" y="0.0" width="349" height="75"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="btnAirline:" destination="-1" eventType="touchUpInside" id="GVY-Wo-wL1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0M6-3c-nKB">
+                    <rect key="frame" x="0.0" y="116" width="768" height="104"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Pi-7a-Nnu">
+                            <rect key="frame" x="211" y="15" width="348" height="85"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flight No*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNE-IZ-pxJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="312" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tu3-Ui-IMg">
+                                    <rect key="frame" x="0.0" y="80" width="348" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.84705882352941175" green="0.074509803921568626" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odM-bj-5CT">
+                                    <rect key="frame" x="56" y="35" width="44" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Flight No*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-4K-NI7">
+                                    <rect key="frame" x="105" y="35" width="218" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Kyc-7a-dvs"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="departure" translatesAutoresizingMaskIntoConstraints="NO" id="3ZV-rt-fe5">
+                                    <rect key="frame" x="8" y="30" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16X-3b-j3p">
+                    <rect key="frame" x="0.0" y="220" width="768" height="66"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zii-4o-mnF" customClass="RoundCornerButton" customModule="STARair" customModuleProvider="target">
+                            <rect key="frame" x="276" y="14" width="216" height="38"/>
+                            <color key="backgroundColor" red="0.84705882352941175" green="0.074509803921568626" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="216" id="JS4-ce-zNT"/>
+                                <constraint firstAttribute="height" constant="38" id="ztL-gr-AE0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Dubai-Medium" family="Dubai" pointSize="22"/>
+                            <state key="normal" title="    Check In" image="new_tourist">
+                                <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnCheckInClick:" destination="-1" eventType="touchUpInside" id="reQ-PD-gix"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zii-4o-mnF" firstAttribute="top" secondItem="16X-3b-j3p" secondAttribute="top" constant="14" id="MFC-pf-YEg"/>
+                        <constraint firstItem="zii-4o-mnF" firstAttribute="centerY" secondItem="16X-3b-j3p" secondAttribute="centerY" id="Quq-9D-r8h"/>
+                        <constraint firstItem="zii-4o-mnF" firstAttribute="centerX" secondItem="16X-3b-j3p" secondAttribute="centerX" id="b9C-Oq-gTy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="v1W-dU-qjL" firstAttribute="leading" secondItem="kng-Pg-Bi0" secondAttribute="leading" id="3QQ-RC-D4y"/>
+                <constraint firstItem="0M6-3c-nKB" firstAttribute="top" secondItem="v1W-dU-qjL" secondAttribute="bottom" constant="11" id="3vC-Pu-nZI"/>
+                <constraint firstItem="16X-3b-j3p" firstAttribute="trailing" secondItem="kng-Pg-Bi0" secondAttribute="trailing" id="5KE-Yf-uGy"/>
+                <constraint firstItem="v1W-dU-qjL" firstAttribute="top" secondItem="kng-Pg-Bi0" secondAttribute="top" id="96P-EH-1BG"/>
+                <constraint firstItem="0M6-3c-nKB" firstAttribute="top" secondItem="v1W-dU-qjL" secondAttribute="bottom" constant="11" id="IcX-1C-jPh"/>
+                <constraint firstItem="0M6-3c-nKB" firstAttribute="leading" secondItem="kng-Pg-Bi0" secondAttribute="leading" id="Iyu-AY-eVR"/>
+                <constraint firstItem="16X-3b-j3p" firstAttribute="leading" secondItem="kng-Pg-Bi0" secondAttribute="leading" id="R4o-F6-H6T"/>
+                <constraint firstItem="0M6-3c-nKB" firstAttribute="top" secondItem="ejK-ZH-nRm" secondAttribute="top" constant="116" id="U6Z-9l-WEr"/>
+                <constraint firstItem="v1W-dU-qjL" firstAttribute="trailing" secondItem="0M6-3c-nKB" secondAttribute="trailing" id="at8-fF-Vi9"/>
+                <constraint firstAttribute="bottom" secondItem="16X-3b-j3p" secondAttribute="bottom" constant="20" symbolic="YES" id="cxC-c5-hqI"/>
+                <constraint firstItem="16X-3b-j3p" firstAttribute="top" secondItem="0M6-3c-nKB" secondAttribute="bottom" id="iGo-XZ-qLC"/>
+                <constraint firstItem="16X-3b-j3p" firstAttribute="top" secondItem="0M6-3c-nKB" secondAttribute="bottom" id="jW1-Om-HVt"/>
+                <constraint firstItem="0M6-3c-nKB" firstAttribute="trailing" secondItem="16X-3b-j3p" secondAttribute="trailing" id="vpA-bJ-OVU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="kng-Pg-Bi0"/>
+            <point key="canvasLocation" x="-1073" y="-1543"/>
+        </view>
+        <view contentMode="scaleToFill" id="uRQ-JZ-UBI">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1533"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaa-3i-L7e">
+                    <rect key="frame" x="0.0" y="1" width="768" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Airport Information " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQp-nh-DOW">
+                            <rect key="frame" x="19" y="0.0" width="636" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1" translatesAutoresizingMaskIntoConstraints="NO" id="lPG-Gz-ost">
+                            <rect key="frame" x="743" y="8" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjF-QI-MLh">
+                            <rect key="frame" x="0.0" y="0.0" width="760" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="BtnAirportInfoClick:" destination="-1" eventType="touchUpInside" id="33u-4V-MdE"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NBa-fx-7oL">
+                            <rect key="frame" x="0.0" y="30" width="760" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tdT-NB-4vy">
+                                <size key="itemSize" width="120" height="160"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="yaa-3i-L7e" id="Ipz-2A-7MZ"/>
+                                <outlet property="delegate" destination="yaa-3i-L7e" id="jnV-27-uWx"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="HM3-Hj-hyE"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Ghz-Pc-iFP"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaA-dr-Myg">
+                    <rect key="frame" x="0.0" y="232" width="768" height="145"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flyers in the City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-eb-dRz">
+                            <rect key="frame" x="24" y="0.0" width="636" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1" translatesAutoresizingMaskIntoConstraints="NO" id="04U-48-OtY">
+                            <rect key="frame" x="743" y="8" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxJ-tC-fWF">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="BtnFlyerClick:" destination="-1" eventType="touchUpInside" id="uzM-9f-jju"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rdA-BJ-8yZ">
+                            <rect key="frame" x="0.0" y="30" width="768" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9E2-oz-mFa">
+                                <size key="itemSize" width="60" height="104"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="QaA-dr-Myg" id="VcM-VP-rTM"/>
+                                <outlet property="delegate" destination="QaA-dr-Myg" id="0Xr-lv-PGx"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="145" id="wEU-QQ-XQ6"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="TW7-zx-kQ0"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpb-gV-Qpb">
+                    <rect key="frame" x="0.0" y="378" width="768" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shops &amp; Dine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4Q-lJ-1wc">
+                            <rect key="frame" x="24" y="0.0" width="638" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1" translatesAutoresizingMaskIntoConstraints="NO" id="RkF-1n-LpR">
+                            <rect key="frame" x="743" y="8" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="P84-ce-W2a">
+                            <rect key="frame" x="0.0" y="30" width="768" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="P5Y-iD-9We">
+                                <size key="itemSize" width="180" height="200"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="dpb-gV-Qpb" id="QYU-9l-drA"/>
+                                <outlet property="delegate" destination="dpb-gV-Qpb" id="cy8-cH-zXO"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siN-CE-RUp">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="BtnShopsDine:" destination="-1" eventType="touchUpInside" id="43G-TU-yKK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="qKf-IR-f6D"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="OWM-3D-osY"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8E-Tr-i6s">
+                    <rect key="frame" x="0.0" y="609" width="768" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meetups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toa-el-9GY">
+                            <rect key="frame" x="24" y="0.0" width="636" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1" translatesAutoresizingMaskIntoConstraints="NO" id="vDs-bf-aA1">
+                            <rect key="frame" x="743" y="8" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xwl-sc-djU">
+                            <rect key="frame" x="0.0" y="30" width="768" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="PHF-kH-PLQ">
+                                <size key="itemSize" width="180" height="200"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="z8E-Tr-i6s" id="qLH-T5-8x7"/>
+                                <outlet property="delegate" destination="z8E-Tr-i6s" id="2D1-s6-9Nw"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIc-8V-1EL">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="BtnMeetups:" destination="-1" eventType="touchUpInside" id="zPr-DP-Lhb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="u11-K2-Mv8"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="M9Q-5S-caZ"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83r-gS-lVi">
+                    <rect key="frame" x="0.0" y="840" width="768" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-Q1-T0s">
+                            <rect key="frame" x="24" y="0.0" width="636" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1" translatesAutoresizingMaskIntoConstraints="NO" id="4Pn-cZ-uW0">
+                            <rect key="frame" x="743" y="8" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="46x-0w-yl0">
+                            <rect key="frame" x="0.0" y="30" width="768" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="odJ-h8-ONG">
+                                <size key="itemSize" width="180" height="200"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="83r-gS-lVi" id="lbK-BC-m2s"/>
+                                <outlet property="delegate" destination="83r-gS-lVi" id="exX-9w-hIy"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6o-ie-bby">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="BtnEvents:" destination="-1" eventType="touchUpInside" id="BvR-sp-q1p"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="X5y-SE-JGm"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="hsA-DH-Msb"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rvw-2H-x7z">
+                    <rect key="frame" x="0.0" y="1071" width="768" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Places" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQq-RP-Cdv">
+                            <rect key="frame" x="24" y="0.0" width="636" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1" translatesAutoresizingMaskIntoConstraints="NO" id="ISs-27-6mB">
+                            <rect key="frame" x="743" y="8" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-r5-sdk">
+                            <rect key="frame" x="0.0" y="30" width="768" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="eR9-qI-umX">
+                                <size key="itemSize" width="180" height="200"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="Rvw-2H-x7z" id="Lwj-M5-2Vl"/>
+                                <outlet property="delegate" destination="Rvw-2H-x7z" id="IRc-kI-gRk"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DF8-FV-aJW">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="BtnPlaces:" destination="-1" eventType="touchUpInside" id="C5d-xe-iRC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="hLh-O3-X2Y"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Ab6-4Q-n8O"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BY6-6l-5BC">
+                    <rect key="frame" x="0.0" y="1302" width="768" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pics #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfO-wl-nlW">
+                            <rect key="frame" x="24" y="0.0" width="636" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back1" translatesAutoresizingMaskIntoConstraints="NO" id="Ktm-om-OT4">
+                            <rect key="frame" x="743" y="8" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RX9-0Y-94n">
+                            <rect key="frame" x="0.0" y="30" width="768" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="VyU-NH-1Yz">
+                                <size key="itemSize" width="180" height="200"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="BY6-6l-5BC" id="cry-k3-9CN"/>
+                                <outlet property="delegate" destination="BY6-6l-5BC" id="Ng7-cN-3lF"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjT-Tm-lLx">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="BtnPics:" destination="-1" eventType="touchUpInside" id="hLJ-ai-mvT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="BsF-4V-VTn"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="iqp-VR-yPG"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="z8E-Tr-i6s" firstAttribute="top" secondItem="dpb-gV-Qpb" secondAttribute="bottom" constant="1" id="1Lg-ii-bzO"/>
+                <constraint firstItem="yaa-3i-L7e" firstAttribute="leading" secondItem="Sns-Uv-hP3" secondAttribute="leading" id="5fE-Fd-Qtw"/>
+                <constraint firstItem="dpb-gV-Qpb" firstAttribute="top" secondItem="QaA-dr-Myg" secondAttribute="bottom" constant="1" id="8Dy-nm-dkv"/>
+                <constraint firstItem="dpb-gV-Qpb" firstAttribute="leading" secondItem="Sns-Uv-hP3" secondAttribute="leading" id="ACw-g0-Bwa"/>
+                <constraint firstItem="z8E-Tr-i6s" firstAttribute="leading" secondItem="Sns-Uv-hP3" secondAttribute="leading" id="Dis-dx-v4z"/>
+                <constraint firstItem="QaA-dr-Myg" firstAttribute="top" secondItem="yaa-3i-L7e" secondAttribute="bottom" constant="1" id="EEU-C5-3Go"/>
+                <constraint firstItem="yaa-3i-L7e" firstAttribute="top" secondItem="uRQ-JZ-UBI" secondAttribute="top" constant="1" id="HND-BT-j2q"/>
+                <constraint firstItem="BY6-6l-5BC" firstAttribute="top" secondItem="Rvw-2H-x7z" secondAttribute="bottom" constant="1" id="Lgk-Kb-hdI"/>
+                <constraint firstItem="BY6-6l-5BC" firstAttribute="leading" secondItem="Sns-Uv-hP3" secondAttribute="leading" id="NjF-BD-erp"/>
+                <constraint firstItem="Rvw-2H-x7z" firstAttribute="trailing" secondItem="Sns-Uv-hP3" secondAttribute="trailing" id="Qf8-ut-Kcy"/>
+                <constraint firstItem="83r-gS-lVi" firstAttribute="leading" secondItem="Sns-Uv-hP3" secondAttribute="leading" id="Spv-4J-pom"/>
+                <constraint firstItem="83r-gS-lVi" firstAttribute="top" secondItem="z8E-Tr-i6s" secondAttribute="bottom" constant="1" id="VmO-jO-qMC"/>
+                <constraint firstItem="dpb-gV-Qpb" firstAttribute="trailing" secondItem="Sns-Uv-hP3" secondAttribute="trailing" id="WNl-Pf-zzz"/>
+                <constraint firstItem="z8E-Tr-i6s" firstAttribute="trailing" secondItem="Sns-Uv-hP3" secondAttribute="trailing" id="WpH-W4-eCh"/>
+                <constraint firstItem="QaA-dr-Myg" firstAttribute="leading" secondItem="Sns-Uv-hP3" secondAttribute="leading" id="oZh-sd-jDP"/>
+                <constraint firstItem="BY6-6l-5BC" firstAttribute="trailing" secondItem="Sns-Uv-hP3" secondAttribute="trailing" id="sKx-ox-oKy"/>
+                <constraint firstItem="83r-gS-lVi" firstAttribute="trailing" secondItem="Sns-Uv-hP3" secondAttribute="trailing" id="tYx-W1-8F5"/>
+                <constraint firstItem="QaA-dr-Myg" firstAttribute="trailing" secondItem="Sns-Uv-hP3" secondAttribute="trailing" id="ucr-Zc-2E2"/>
+                <constraint firstItem="yaa-3i-L7e" firstAttribute="trailing" secondItem="Sns-Uv-hP3" secondAttribute="trailing" id="ueV-Nk-8kk"/>
+                <constraint firstItem="Rvw-2H-x7z" firstAttribute="leading" secondItem="Sns-Uv-hP3" secondAttribute="leading" id="v9U-uc-Wdz"/>
+                <constraint firstItem="Rvw-2H-x7z" firstAttribute="top" secondItem="83r-gS-lVi" secondAttribute="bottom" constant="1" id="vQb-5U-ORs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Sns-Uv-hP3"/>
+            <point key="canvasLocation" x="-228" y="-962.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back1" width="32" height="32"/>
+        <image name="calendar" width="256" height="256"/>
+        <image name="departure" width="256" height="256"/>
+        <image name="ic_plane" width="1647.75" height="1097.25"/>
+        <image name="ic_red_back" width="25" height="25"/>
+        <image name="ic_uae_flag" width="826" height="559"/>
+        <image name="new_tourist" width="32" height="32"/>
+    </resources>
+</document>

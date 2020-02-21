@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dubai-Bold.ttf">
+            <string>Dubai-Bold</string>
+        </array>
+        <array key="Dubai-Medium.ttf">
+            <string>Dubai-Medium</string>
+        </array>
+        <array key="Dubai-Regular.ttf">
+            <string>Dubai-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MeetupCell" customModule="HeyFlyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57g-fR-lzR">
+                        <rect key="frame" x="6" y="8" width="168" height="184"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvr-RJ-Gf7">
+                                <rect key="frame" x="34" y="29" width="57" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="g5P-Ft-V8W"/>
+                                    <constraint firstAttribute="width" constant="57" id="w4C-Wm-mgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dubai-Bold" family="Dubai" pointSize="36"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Z-Cn-Dfu">
+                                <rect key="frame" x="14" y="76" width="141" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7VU-p7-n3v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dubai-Medium" family="Dubai" pointSize="14"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5H-fJ-ZxS">
+                                <rect key="frame" x="14" y="129" width="141" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Awi-Ys-Wm8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="14"/>
+                                <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCd-yB-9KS">
+                                <rect key="frame" x="13" y="2" width="141" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="rmT-Af-HV1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="16"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEC" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxr-rj-7Er">
+                                <rect key="frame" x="91" y="41" width="64" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N8m-gi-6br"/>
+                                    <constraint firstAttribute="width" constant="64" id="dEL-db-ptI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dubai-Regular" family="Dubai" pointSize="20"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bvr-RJ-Gf7" firstAttribute="top" secondItem="bCd-yB-9KS" secondAttribute="bottom" constant="5" id="0xG-4F-pAI"/>
+                            <constraint firstItem="D5H-fJ-ZxS" firstAttribute="leading" secondItem="57g-fR-lzR" secondAttribute="leading" constant="14" id="6Xg-7x-JuV"/>
+                            <constraint firstAttribute="trailing" secondItem="bCd-yB-9KS" secondAttribute="trailing" constant="14" id="AuU-SK-GxW"/>
+                            <constraint firstItem="Bvr-RJ-Gf7" firstAttribute="centerX" secondItem="57g-fR-lzR" secondAttribute="centerX" constant="-21.5" id="BdC-4T-ebn"/>
+                            <constraint firstItem="J2Z-Cn-Dfu" firstAttribute="top" secondItem="lxr-rj-7Er" secondAttribute="bottom" constant="5" id="E3V-X6-1vl"/>
+                            <constraint firstItem="bCd-yB-9KS" firstAttribute="top" secondItem="57g-fR-lzR" secondAttribute="top" constant="2" id="H7i-4C-xGh"/>
+                            <constraint firstAttribute="trailing" secondItem="D5H-fJ-ZxS" secondAttribute="trailing" constant="13" id="Qj5-pV-jFt"/>
+                            <constraint firstItem="D5H-fJ-ZxS" firstAttribute="top" secondItem="J2Z-Cn-Dfu" secondAttribute="bottom" constant="3" id="a8B-9C-oTy"/>
+                            <constraint firstAttribute="trailing" secondItem="J2Z-Cn-Dfu" secondAttribute="trailing" constant="13" id="bLt-3t-QxM"/>
+                            <constraint firstItem="lxr-rj-7Er" firstAttribute="leading" secondItem="Bvr-RJ-Gf7" secondAttribute="trailing" id="d0V-CT-aLt"/>
+                            <constraint firstItem="bCd-yB-9KS" firstAttribute="leading" secondItem="57g-fR-lzR" secondAttribute="leading" constant="13" id="gfp-HS-qiD"/>
+                            <constraint firstItem="lxr-rj-7Er" firstAttribute="top" secondItem="bCd-yB-9KS" secondAttribute="bottom" constant="17" id="t6s-lx-Fmz"/>
+                            <constraint firstItem="J2Z-Cn-Dfu" firstAttribute="leading" secondItem="57g-fR-lzR" secondAttribute="leading" constant="14" id="w1q-Ed-zff"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="57g-fR-lzR" secondAttribute="bottom" constant="8" id="3tI-0L-IFK"/>
+                <constraint firstItem="57g-fR-lzR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Zhk-Vl-Tg6"/>
+                <constraint firstItem="57g-fR-lzR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="kaA-gh-TLw"/>
+                <constraint firstAttribute="trailing" secondItem="57g-fR-lzR" secondAttribute="trailing" constant="6" id="tuY-SS-VLN"/>
+            </constraints>
+            <size key="customSize" width="168" height="188"/>
+            <connections>
+                <outlet property="lblDate" destination="Bvr-RJ-Gf7" id="oI3-Dz-zjL"/>
+                <outlet property="lblGroupName" destination="D5H-fJ-ZxS" id="kIG-O0-jry"/>
+                <outlet property="lblMonth" destination="lxr-rj-7Er" id="jvN-ng-krc"/>
+                <outlet property="lblTime" destination="bCd-yB-9KS" id="clC-Hn-xhd"/>
+                <outlet property="lblTitle" destination="J2Z-Cn-Dfu" id="Duz-6b-Qc6"/>
+                <outlet property="vwBG" destination="57g-fR-lzR" id="bwR-EH-QNA"/>
+            </connections>
+            <point key="canvasLocation" x="-70" y="15"/>
+        </collectionViewCell>
+    </objects>
+</document>

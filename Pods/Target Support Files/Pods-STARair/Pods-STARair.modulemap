@@ -1,0 +1,6 @@
+framework module Pods_STARair {
+  umbrella header "Pods-STARair-umbrella.h"
+
+  export *
+  module * { export * }
+}
